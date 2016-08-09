@@ -56,11 +56,15 @@ static NSString * const BNRDynamicTypeManagerFontKeypathUITextView  = @"font";
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         textStyles = @[UIFontTextStyleBody,
+                       UIFontTextStyleCallout,
                        UIFontTextStyleCaption1,
                        UIFontTextStyleCaption2,
                        UIFontTextStyleFootnote,
                        UIFontTextStyleHeadline,
-                       UIFontTextStyleSubheadline];
+                       UIFontTextStyleSubheadline,
+                       UIFontTextStyleTitle1,
+                       UIFontTextStyleTitle2,
+                       UIFontTextStyleTitle3];
     });
 
     for (NSString *style in textStyles) {
